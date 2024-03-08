@@ -184,7 +184,7 @@ func (c *Client) CreateCompletion(
 		return
 	}
 
-	urlSuffix := "/completions"
+	urlSuffix := ""
 	if !checkEndpointSupportsModel(urlSuffix, request.Model) {
 		err = ErrCompletionUnsupportedModel
 		return
